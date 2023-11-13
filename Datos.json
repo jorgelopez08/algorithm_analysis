@@ -17,8 +17,8 @@
             "Nombre" : "ESPINOZA VALDEZ, AURORA",
             "Horarios Disponibles" : 
             [
-                "11:00 - 13:00, L - X",
-                "13:00 - 15:00, L - X"
+                "11:00 - 13:00, M - J",
+                "13:00 - 15:00, M - J"
             ]
         },
         {
@@ -35,8 +35,8 @@
             "Nombre" : "LANDA HORTA, DANIEL OMAR",
             "Horarios Disponibles" : 
             [
-                "15:00 - 17:00, L - X",
-                "09:00 - 11:00, L, X y V"
+                "15:00 - 17:00, M - J",
+                "09:00 - 11:00, M, J y S"
             ]
         },
         {
@@ -53,8 +53,8 @@
             "Nombre" : "CASILLAS ZAMORA, ANTONIO",
             "Horarios Disponibles" : 
             [
-                "11:00 - 13:00, L, X y V",
-                "13:00 - 15:00, L. X y V"
+                "11:00 - 13:00, M, J y S",
+                "13:00 - 15:00, M, J y S"
             ]
         },
         {
@@ -62,7 +62,7 @@
             "Nombre" : "VAZQUEZ HERRERA, JOSE IGNACIO",
             "Horarios Disponibles" : 
             [
-                "13:00 - 15:00, L. X y V",
+                "13:00 - 15:00, L, X y V",
                 "15:00 - 17:00, L - X"
             ]
         },
@@ -71,8 +71,8 @@
             "Nombre" : "CAMACHO SANTILLAN, VERONICA",
             "Horarios Disponibles" : 
             [
-                "15:00 - 17:00, L, X y V",
-                "09:00 - 11:00, L - X"
+                "15:00 - 17:00, M, J y S",
+                "09:00 - 11:00, M - J"
             ]
         },
         {
@@ -89,8 +89,8 @@
             "Nombre" : "PEREZ TORRES, GRISELDA",
             "Horarios Disponibles" : 
             [
-                "11:00 - 13:00, L - X",
-                "13:00 - 15:00, L - X"
+                "11:00 - 13:00, M - J",
+                "13:00 - 15:00, M - J"
             ]
         },
         {
@@ -107,8 +107,8 @@
             "Nombre" : "GUTIERREZ SALMERON, MARTHA DEL CARMEN",
             "Horarios Disponibles" : 
             [
-                "15:00 - 17:00, L, X y V",
-                "09:00 - 11:00, L, X y V"
+                "15:00 - 17:00, M, J y S",
+                "09:00 - 11:00, M, J y S"
             ]
         },
         {
@@ -125,8 +125,8 @@
             "Nombre" : "VALDES LOPEZ, JULIO ESTEBAN",
             "Horarios Disponibles" : 
             [
-                "11:00 - 13:00, L, X y V",
-                "13:00 - 15:00, L - X"
+                "11:00 - 13:00, M, J y S",
+                "13:00 - 15:00, M - J"
             ]
         },
         {
@@ -143,8 +143,8 @@
             "Nombre" : "VILLASEÑOR PADILLA, CARLOS ALBERTO",
             "Horarios Disponibles" : 
             [
-                "15:00 - 17:00, L - X",
-                "09:00 - 11:00, L - X"
+                "15:00 - 17:00, M - J",
+                "09:00 - 11:00, M - J"
             ]
         },
         {
@@ -161,8 +161,8 @@
             "Nombre" : "REYNOSO GOMEZ, BLANCA LORENA",
             "Horarios Disponibles" : 
             [
-                "11:00 - 13:00, L - X",
-                "13:00 - 15:00, L - X"
+                "11:00 - 13:00, M - J",
+                "13:00 - 15:00, M - J"
             ]
         },
         {
@@ -179,8 +179,8 @@
             "Nombre" : "MORALES RAMIREZ, THELMA ISABEL",
             "Horarios Disponibles" : 
             [
-                "15:00 - 17:00, L - X",
-                "09:00 - 11:00, L - X"
+                "15:00 - 17:00, M - J",
+                "09:00 - 11:00, M - J"
             ]
         },
         {
@@ -197,8 +197,8 @@
             "Nombre" : "ESTRADA GUZMAN, ELSA",
             "Horarios Disponibles" : 
             [
-                "11:00 - 13:00, L, X y V",
-                "13:00 - 15:00, L. X y V"
+                "11:00 - 13:00, M, J y S",
+                "13:00 - 15:00, M, J y S"
             ]
         },
         {
@@ -215,8 +215,8 @@
             "Nombre" : "RAMIREZ HERNANDEZ, NORMA",
             "Horarios Disponibles" : 
             [
-                "15:00 - 17:00, L - X",
-                "09:00 - 11:00, L - X"
+                "15:00 - 17:00, M - J",
+                "09:00 - 11:00, M - J"
             ]
         },
         {
@@ -233,8 +233,8 @@
             "Nombre" : "GUTIERREZ HERNANDEZ, ALFREDO",
             "Horarios Disponibles" : 
             [
-                "11:00 - 13:00, L - X",
-                "13:00 - 15:00, L. X y V"
+                "11:00 - 13:00, M - J",
+                "13:00 - 15:00, M, J y S"
             ]
         },
         {
@@ -251,8 +251,8 @@
             "Nombre" : "GALVEZ LOPEZ, HECTOR ALEJANDRO",
             "Horarios Disponibles" : 
             [
-                "15:00 - 17:00, L - X",
-                "09:00 - 11:00, L - X"
+                "15:00 - 17:00, M - J",
+                "09:00 - 11:00, M - J"
             ]
         },
         {
@@ -269,8 +269,8 @@
             "Nombre" : "HINOJOSA CERVANTES, SALVADOR MIGUEL",
             "Horarios Disponibles" : 
             [
-                "11:00 - 13:00, L, X y V",
-                "13:00 - 15:00, L - X"
+                "11:00 - 13:00, M, J y S",
+                "13:00 - 15:00, M - J"
             ]
         },
         {
@@ -287,8 +287,8 @@
             "Nombre" : "VERA SORIA, FRANCISCO",
             "Horarios Disponibles" : 
             [
-                "15:00 - 17:00, L - X",
-                "09:00 - 11:00, L - X"
+                "15:00 - 17:00, M - J",
+                "09:00 - 11:00, M - J"
             ]
         },
         {
@@ -305,8 +305,8 @@
             "Nombre" : "RAMIREZ MORENO, BENJAMIN",
             "Horarios Disponibles" : 
             [
-                "11:00 - 13:00, L - X",
-                "13:00 - 15:00, L - X"
+                "11:00 - 13:00, M - J",
+                "13:00 - 15:00, M - J"
             ]
         },
         {
@@ -322,7 +322,7 @@
             "Nombre" : "LOPEZ ARCE DELGADO, JORGE ERNESTO",
             "Horarios Disponibles" : 
             [
-                "09:00 - 11:00, L - X"
+                "09:00 - 11:00, M - J"
             ]
         }
     ]
@@ -1095,6 +1095,499 @@
                 "RAMIREZ MORENO, BENJAMIN"
             ],
             "Cantidad máxima de alumnos" : 40
+        }
+    ]
+},
+
+{
+    "Seccion":
+    [
+        {
+            "ID" : 1,
+            "Profesor asignado" : "LOPEZ ARCE DELGADO, JORGE ERNESTO",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "L - X",
+            "Curso" : "INNOVACIÓN TECNOLÓGICA"
+        },
+        {
+            "ID" : 2,
+            "Profesor asignado" : "ESPINOZA VALDEZ, AURORA",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "M - J",
+            "Curso" : "INNOVACIÓN TECNOLÓGICA"
+        },
+        {
+            "ID" : 3,
+            "Profesor asignado" : "HERNANDEZ CASAS, ANGEL TONATIUH",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "L - X",
+            "Curso" : "INTERACCIÓN HUMANO COMPUTADORA"
+        },
+        {
+            "ID" : 4,
+            "Profesor asignado" : "LANDA HORTA, DANIEL OMAR",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "M - J",
+            "Curso" : "INTERACCIÓN HUMANO COMPUTADORA"
+        },
+        {
+            "ID" : 5,
+            "Profesor asignado" : "MARTINEZ SOLTERO, ERASMO GABRIEL",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "L, X y V",
+            "Curso" : "INGENIERÍA DE SOFTWARE"
+        },
+        {
+            "ID" : 6,
+            "Profesor asignado" : "CASILLAS ZAMORA, ANTONIO",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "M, J y S",
+            "Curso" : "INGENIERÍA DE SOFTWARE"
+        },
+        {
+            "ID" : 7,
+            "Profesor asignado" : "VAZQUEZ HERRERA, JOSE IGNACIO",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "L, X y V",
+            "Curso" : "PROGRAMACIÓN DE BAJO NIVEL"
+        },
+        {
+            "ID" : 8,
+            "Profesor asignado" : "CAMACHO SANTILLAN, VERONICA",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "M, J y S",
+            "Curso" : "PROGRAMACIÓN DE BAJO NIVEL"
+        },
+        {
+            "ID" : 9,
+            "Profesor asignado" : "ARENAS YERENA, CARLOS DARIO",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "L - X",
+            "Curso" : "ANÁLISIS DE ALGORITMOS"
+        },
+        {
+            "ID" : 10,
+            "Profesor asignado" : "PEREZ TORRES, GRISELDA",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "M - J",
+            "Curso" : "ANÁLISIS DE ALGORITMOS"
+        },
+        {
+            "ID" : 11,
+            "Profesor asignado" : "ISLAS TOSKI, MIGUEL ANGEL ALEJANDRO",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "L, X y V",
+            "Curso" : "BASES DE DATOS"
+        },
+        {
+            "ID" : 12,
+            "Profesor asignado" : "GUTIERREZ SALMERON, MARTHA DEL CARMEN",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "M, J y S",
+            "Curso" : "BASES DE DATOS"
+        },
+        {
+            "ID" : 13,
+            "Profesor asignado" : "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "L, X y V",
+            "Curso" : "SISTEMAS OPERATIVOS"
+        },
+        {
+            "ID" : 14,
+            "Profesor asignado" : "VALDES LOPEZ, JULIO ESTEBAN",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "M, J y S",
+            "Curso" : "SISTEMAS OPERATIVOS"
+        },
+        {
+            "ID" : 15,
+            "Profesor asignado" : "RIOS ARRAÑAGA, JORGE DANIEL",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "L - X",
+            "Curso" : "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL"
+        },
+        {
+            "ID" : 16,
+            "Profesor asignado" : "VILLASEÑOR PADILLA, CARLOS ALBERTO",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "M - J",
+            "Curso" : "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL"
+        },
+        {
+            "ID" : 17,
+            "Profesor asignado" : "RIVERA AGUILAR, BEATRIZ ADRIANA",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "L - X",
+            "Curso" : "REDES DE COMPUTADORAS"
+        },
+        {
+            "ID" : 18,
+            "Profesor asignado" : "REYNOSO GOMEZ, BLANCA LORENAO",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "M - J",
+            "Curso" : "REDES DE COMPUTADORAS"
+        },
+        {
+            "ID" : 19,
+            "Profesor asignado" : "BARBA VENEGAS, MIGUEL ANGEL",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "L - X",
+            "Curso" : "SEMINARIO DE INTEGRACIÓN PROTOCOLO"
+        },
+        {
+            "ID" : 20,
+            "Profesor asignado" : "MORALES RAMIREZ, THELMA ISABEL",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "M - J",
+            "Curso" : "SEMINARIO DE INTEGRACIÓN PROTOCOLO"
+        },
+        {
+            "ID" : 21,
+            "Profesor asignado" : "GOMEZ MARQUEZ, CAROLINA ELIZABETH",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "L, X y V",
+            "Curso" : "ESTRUCTURA DE DATOS"
+        },
+        {
+            "ID" : 22,
+            "Profesor asignado" : "ESTRADA GUZMAN, ELSA",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "M, J y S",
+            "Curso" : "ESTRUCTURA DE DATOS"
+        },
+        {
+            "ID" : 23,
+            "Profesor asignado" : "LARA LOPEZ, GRACIELA",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "L - X",
+            "Curso" : "PROBABILIDAD Y ESTADÍSTICA"
+        },
+        {
+            "ID" : 24,
+            "Profesor asignado" : "RAMIREZ HERNANDEZ, NORMA",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "M - J",
+            "Curso" : "PROBABILIDAD Y ESTADÍSTICA"
+        },
+        {
+            "ID" : 25,
+            "Profesor asignado" : "GUERRERO CARLOS, ANA JAZMIN",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "L - X",
+            "Curso" : "MÉTODOS NUMÉRICOS"
+        },
+        {
+            "ID" : 26,
+            "Profesor asignado" : "GUTIERREZ HERNANDEZ, ALFREDO",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "M - J",
+            "Curso" : "MÉTODOS NUMÉRICOS"
+        },
+        {
+            "ID" : 27,
+            "Profesor asignado" : "MUÑOZ GOMEZ, LUIS ALBERTO",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "L - X",
+            "Curso" : "ARQUITECTURA DE COMPUTADORAS"
+        },
+        {
+            "ID" : 28,
+            "Profesor asignado" : "GALVEZ LOPEZ, HECTOR ALEJANDRO",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "M - J",
+            "Curso" : "ARQUITECTURA DE COMPUTADORAS"
+        },
+        {
+            "ID" : 29,
+            "Profesor asignado" : "LUPERCIO CORONEL, RAMIRO",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "L, X y V",
+            "Curso" : "PROGRAMACIÓN PARA INTERNET"
+        },
+        {
+            "ID" : 30,
+            "Profesor asignado" : "HINOJOSA CERVANTES, SALVADOR MIGUEL",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "M, J y S",
+            "Curso" : "PROGRAMACIÓN PARA INTERNET"
+        },
+        {
+            "ID" : 31,
+            "Profesor asignado" : "MARISCAL LUGO, LUIS FELIPE",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "L - X",
+            "Curso" : "LIDERAZGO Y EMPRENDIMIENTO"
+        },
+        {
+            "ID" : 32,
+            "Profesor asignado" : "VERA SORIA, FRANCISCO",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "M - J",
+            "Curso" : "LIDERAZGO Y EMPRENDIMIENTO"
+        },
+        {
+            "ID" : 33,
+            "Profesor asignado" : "SANTIAGO HERNANDEZ, ELOISA",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "L, X y V",
+            "Curso" : "PROGRAMACIÓN ORIENTADA A OBJETOS"
+        },
+        {
+            "ID" : 34,
+            "Profesor asignado" : "RAMIREZ MORENO, BENJAMIN",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "M, J y S",
+            "Curso" : "PROGRAMACIÓN ORIENTADA A OBJETOS"
+        },
+        {
+            "ID" : 35,
+            "Profesor asignado" : "SANDOVAL ARRAYGA, CARLOS JOHNNATAN",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "L - X",
+            "Curso" : "ÁLGEBRA LINEAL"
+        },
+        {
+            "ID" : 36,
+            "Profesor asignado" : "BUENROSTRO ARCEO, ROSALIA",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "M - J",
+            "Curso" : "ÁLGEBRA LINEAL"
+        },
+        {
+            "ID" : 37,
+            "Profesor asignado" : "LOPEZ ARCE DELGADO, JORGE ERNESTO",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "L - X",
+            "Curso" : "ECUACIONES DIFERENCIALES"
+        },
+        {
+            "ID" : 38,
+            "Profesor asignado" : "ESPINOZA VALDEZ, AURORA",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "M - J",
+            "Curso" : "ECUACIONES DIFERENCIALES"
+        },
+        {
+            "ID" : 39,
+            "Profesor asignado" : "HERNANDEZ CASAS, ANGEL TONATIUH",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "L, X y V",
+            "Curso" : "CIRCUITOS ELECTRÓNICOS Y ELECTROMAGNETISMO"
+        },
+        {
+            "ID" : 40,
+            "Profesor asignado" : "LANDA HORTA, DANIEL OMAR",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "M, J y S",
+            "Curso" : "CIRCUITOS ELECTRÓNICOS Y ELECTROMAGNETISMO"
+        },
+        {
+            "ID" : 41,
+            "Profesor asignado" : "MARTINEZ SOLTERO, ERASMO GABRIEL",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "L, X y V",
+            "Curso" : "SISTEMAS DIGITALES"
+        },
+        {
+            "ID" : 42,
+            "Profesor asignado" : "CASILLAS ZAMORA, ANTONIO",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "M, J y S",
+            "Curso" : "SISTEMAS DIGITALES"
+        },
+        {
+            "ID" : 43,
+            "Profesor asignado" : "VAZQUEZ HERRERA, JOSE IGNACIO",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "L - X",
+            "Curso" : "ADMINISTRACIÓN"
+        },
+        {
+            "ID" : 44,
+            "Profesor asignado" : "CAMACHO SANTILLAN, VERONICA",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "M - J",
+            "Curso" : "ADMINISTRACIÓN"
+        },
+        {
+            "ID" : 45,
+            "Profesor asignado" : "ARENAS YERENA, CARLOS DARIO",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "L - X",
+            "Curso" : "PROGRAMACIÓN ESTRUCTURADA"
+        },{
+            "ID" : 46,
+            "Profesor asignado" : "PEREZ TORRES, GRISELDA",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "M - J",
+            "Curso" : "PROGRAMACIÓN ESTRUCTURADA"
+        },
+        {
+            "ID" : 47,
+            "Profesor asignado" : "ISLAS TOSKI, MIGUEL ANGEL ALEJANDRO",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "L, X y V",
+            "Curso" : "MATEMÁTICAS DISCRETAS"
+        },
+        {
+            "ID" : 48,
+            "Profesor asignado" : "GUTIERREZ SALMERON, MARTHA DEL CARMEN",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "M, J y S",
+            "Curso" : "MATEMÁTICAS DISCRETAS"
+        },
+        {
+            "ID" : 49,
+            "Profesor asignado" : "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "L - X",
+            "Curso" : "CÁLCULO DIFERENCIAL E INTEGRAL"
+        },
+        {
+            "ID" : 50,
+            "Profesor asignado" : "VALDES LOPEZ, JULIO ESTEBAN",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "M - J",
+            "Curso" : "CÁLCULO DIFERENCIAL E INTEGRAL"
+        },
+        {
+            "ID" : 51,
+            "Profesor asignado" : "RIOS ARRAÑAGA, JORGE DANIEL",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "L - X",
+            "Curso" : "MECÁNICA"
+        },
+        {
+            "ID" : 52,
+            "Profesor asignado" : "VILLASEÑOR PADILLA, CARLOS ALBERTO",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "M - J",
+            "Curso" : "MECÁNICA"
+        },
+        {
+            "ID" : 53,
+            "Profesor asignado" : "RIVERA AGUILAR, BEATRIZ ADRIANA",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "L - X",
+            "Curso" : "ADMINISTRACIÓN DE PROYECTOS TECNOLÓGICOS"
+        },
+        {
+            "ID" : 54,
+            "Profesor asignado" : "REYNOSO GOMEZ, BLANCA LORENA",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "M - J",
+            "Curso" : "ADMINISTRACIÓN DE PROYECTOS TECNOLÓGICOS"
+        },
+        {
+            "ID" : 55,
+            "Profesor asignado" : "BARBA VENEGAS, MIGUEL ANGEL",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "L - X",
+            "Curso" : "EXPRESIÓN ORAL Y ESCRITA"
+        },{
+            "ID" : 56,
+            "Profesor asignado" : "MORALES RAMIREZ, THELMA ISABEL",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "M - J",
+            "Curso" : "EXPRESIÓN ORAL Y ESCRITA"
+        },
+        {
+            "ID" : 57,
+            "Profesor asignado" : "GOMEZ MARQUEZ, CAROLINA ELIZABETH",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "L, X y V",
+            "Curso" : "FUNDAMENTOS DE PROGRAMACIÓN"
+        },
+        {
+            "ID" : 58,
+            "Profesor asignado" : "ESTRADA GUZMAN, ELSA",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "M, J y S",
+            "Curso" : "FUNDAMENTOS DE PROGRAMACIÓN"
+        },
+        {
+            "ID" : 59,
+            "Profesor asignado" : "LARA LOPEZ, GRACIELA",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "L - X",
+            "Curso" : "LÓGICA MATEMÁTICA"
+        },
+        {
+            "ID" : 60,
+            "Profesor asignado" : "RAMIREZ HERNANDEZ, NORMA",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "M - J",
+            "Curso" : "LÓGICA MATEMÁTICA"
+        },
+        {
+            "ID" : 61,
+            "Profesor asignado" : "GUERRERO CARLOS, ANA JAZMIN",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "L, X y V",
+            "Curso" : "PRECÁLCULO"
+        },
+        {
+            "ID" : 62,
+            "Profesor asignado" : "GUTIERREZ HERNANDEZ, ALFREDO",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "M, J y S",
+            "Curso" : "PRECÁLCULO"
+        },
+        {
+            "ID" : 63,
+            "Profesor asignado" : "MUÑOZ GOMEZ, LUIS ALBERTO",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "L - X",
+            "Curso" : "FUNDAMENTOS DE FÍSICA"
+        },
+        {
+            "ID" : 64,
+            "Profesor asignado" : "GALVEZ LOPEZ, HECTOR ALEJANDRO",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "M - J",
+            "Curso" : "FUNDAMENTOS DE FÍSICA"
+        },
+        {
+            "ID" : 65,
+            "Profesor asignado" : "LUPERCIO CORONEL, RAMIRO",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "L - X",
+            "Curso" : "INTRODUCCIÓN A LA INGENIERÍA"
+        },{
+            "ID" : 66,
+            "Profesor asignado" : "HINOJOSA CERVANTES, SALVADOR MIGUEL",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "M - J",
+            "Curso" : "INTRODUCCIÓN A LA INGENIERÍA"
+        },
+        {
+            "ID" : 67,
+            "Profesor asignado" : "MARISCAL LUGO, LUIS FELIPE",
+            "Horario" : "15:00 - 17:00",
+            "Dias" : "L - X",
+            "Curso" : "ÉTICA Y LEGISLACIÓN"
+        },
+        {
+            "ID" : 68,
+            "Profesor asignado" : "VERA SORIA, FRANCISCO",
+            "Horario" : "09:00 - 11:00",
+            "Dias" : "M - J",
+            "Curso" : "ÉTICA Y LEGISLACIÓN"
+        },
+        {
+            "ID" : 69,
+            "Profesor asignado" : "SANTIAGO HERNANDEZ, ELOISA",
+            "Horario" : "11:00 - 13:00",
+            "Dias" : "L - X",
+            "Curso" : "TEORÍA DE LA COMPUTACIÓN"
+        },
+        {
+            "ID" : 70,
+            "Profesor asignado" : "RAMIREZ MORENO, BENJAMIN",
+            "Horario" : "13:00 - 15:00",
+            "Dias" : "M - J",
+            "Curso" : "TEORÍA DE LA COMPUTACIÓN"
         }
     ]
 }
