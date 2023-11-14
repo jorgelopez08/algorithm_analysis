@@ -12,7 +12,7 @@ class Curso:
         self.nombre = nombre
         self.horas = horas
         self.lab = lab
-        # self.profe_disp = profe_disp
+        self.profe_disp = profe_disp
         self.max_alumnos = max_alumnos
 
 #aulas 
