@@ -113,7 +113,7 @@ class Bipartito:
 
 if __name__ == "__main__":
     # Aquí deberías cargar tus datos desde el archivo JSON
-    archivo_json = "tu_archivo.json"
+    archivo_json = "Datos.json"
     with open(archivo_json, 'r', encoding='utf-8') as file:
         datos = json.load(file)
 
