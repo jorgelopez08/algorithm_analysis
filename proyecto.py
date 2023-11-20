@@ -1,10 +1,6 @@
 import networkx as nx
 import json
 import matplotlib.pyplot as plt
-
-# Cargar datos JSON
-with open('Datos.json', 'r', encoding='utf-8') as file:
-    datos = json.load(file)
     
 #profesores
 class Profesor:
@@ -115,11 +111,13 @@ class Bipartito:
         nx.draw(self.grafo, pos, with_labels=True, font_weight='bold', node_color=colores)
         plt.show()
 
-def __main__():
+if __name__ == "__main__":
+    # Aquí deberías cargar tus datos desde el archivo JSON
+    archivo_json = "tu_archivo.json"
+    with open(archivo_json, 'r', encoding='utf-8') as file:
+        datos = json.load(file)
+
     grafo1 = Bipartito(datos)
     grafo1.mostrarprofesores()
     grafo1.mostrarCursos()
-    grafo1.mostrarCursos()
     grafo1.mostrar_nodos()
-
-__main__()
