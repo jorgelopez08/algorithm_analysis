@@ -58,24 +58,17 @@ class Bipartito:
     def buscarProfe(self):
         # Obtener la lista de profesores del archivo JSON
         profesores = datos["Datos"][0]["Profesor"]
-
-        nombre_profesor = str(input('Qué profesor buscas? -> '))
+        nombre = str(input('Qué profesor buscas? -> '))
 
         for profesor in profesores:
-            if nombre_profesor.upper() in profesor['Nombre'].upper():
-                print(f" ID: {profesor['id']}\n Nombre: {profesor['Nombre']}\n Horarios disponibles: {profesor['Horarios Disponibles']}")
+            if nombre.upper() in profesor['Nombre'].upper():
+                print(f"Profesor encontrado -> \nID: {profesor['id']}\nNombre: {profesor['Nombre']}\nHorarios disponibles: {profesor['Horarios Disponibles']}")
+                print(f"Cursos que imparte -> \n")
+                for curso in self.grafo.neighbors(profesor['Nombre']):
+                    print(f' - {curso}')
                 return
-        print(f"No se encontró ningún profesor con el nombre '{nombre_profesor}'.")
+        print(f"No se encontró ningún profesor con el nombre '{nombre}'.")
         self.buscarProfe()
-
-
-    def agregarProfe(self):
-        nombre = str(input('Nombre -> '))
-        horarios_disp = []
-
-
-    def borrarProfe(self):
-        pass
 
     #muestra los cursos disponibles
     def mostrarCursos(self):
@@ -91,25 +84,17 @@ class Bipartito:
 
     #busca los cursos disponibles
     def buscar_curso(self):
-        nombreID = str(input('Escribe nombre o ID del curso ->'))
-        for nodo in self.grafo.nodes:
-            if self.grafo.nodes[nodo]['tipo'] == 'Curso':
-                # Verifica si el nombre o ID coincide
-                if nombreID in [nodo, self.grafo.nodes[nodo]['ID']]:
-                    print(f"Curso encontrado -> ID: {self.grafo.nodes[nodo]['ID']}, Nombre: {nodo}")
-                    profesores_asignados = list(self.grafo.neighbors(nodo))
-                    print("Profesores asignados:")
-                    for profesor in profesores_asignados:
-                        print(f"  - {profesor}")
-                    return
-        print(f"No se encontró el curso con nombre o ID '{nombreID}'.")
+        cursos = datos['Datos'][2]['Curso']
+        nombre = str(input('Escribe nombre del curso -> '))
+        for curso in cursos:
+            if nombre.upper() in curso['Nombre'].upper():
+                print(f"Curso encontrado -> \nID: {curso['ID']} \nNombre: {curso['Nombre']}\n")
+                print(f"Profesores que imparten la clase -> \n")
+                for profesor in self.grafo.neighbors(curso['ID']):
+                    print(f' - {profesor}')
+                return
+        print(f"No se encontró el curso con nombre '{nombre}'.\n")
         self.buscar_curso()
-
-    def agregarCurso(self):
-        pass
-
-    def borrarCurso(self):
-        pass
     
     #función para generar grafo bipartito
     def generar_grafo_bipartito(self, datos):
