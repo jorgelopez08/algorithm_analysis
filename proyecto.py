@@ -40,7 +40,45 @@ class Seccion:
 #Grafo bipartito
 class Bipartito:
     def __init__(self,grafo):
-        self.grafo = self.generar_grafo_bipartito(datos)
+        self.grafo = self.grafo_bipartito(datos)
+
+    #función para generar grafo bipartito
+    def grafo_bipartito(self, datos):
+        grafo = nx.Graph()
+            
+        #conjunto de datos 'Cursos'
+        cursos = datos["Datos"][2]["Curso"]
+        #se crea un nodo por cada elemento del conjunto
+        for curso in cursos:
+            id_curso = curso["ID"]
+            grafo.add_node(id_curso, bipartite=0, tipo="Curso")
+
+        # Conjunto de datos 'Profesores'
+        profesores = datos["Datos"][0]["Profesor"]
+        #se crea un nodo por cada elemento del conjunto
+        for profesor in profesores:
+            nombre_profesor = profesor['Nombre']
+            grafo.add_node(nombre_profesor, bipartite=1, tipo="Profesor")
+
+        # Agregar aristas al grafo dependiendo cuales profesores estan disponibles para cada materia
+        for curso in cursos:
+            for profesor in profesores:
+                nombre_profesor = profesor['Nombre']
+                #si el profesor está disponible en ese curso, se crea una arista que los conecta
+                if nombre_profesor in curso["Profesores disponibles"]:
+                    id_curso = curso["ID"]
+                    grafo.add_edge(nombre_profesor, id_curso)
+        return grafo
+    
+    #esta función imprime el grafo
+    def mostrar_nodos(self):
+        # esto colorea los nodos de tipo curso de color azul y los demás de rojo
+        colores = ['blue' if self.grafo.nodes[nodo]['tipo'] == 'Curso' else 'red' for nodo in self.grafo.nodes()]        
+        
+        #posiciona en pantalla el grafo de forma circular
+        pos = nx.circular_layout(self.grafo)
+        nx.draw(self.grafo, pos, with_labels=True, font_weight='bold', node_color=colores)
+        plt.show()
 
     #muestra todos los profesores disponibles
     def mostrarprofesores(self):
@@ -96,61 +134,12 @@ class Bipartito:
         print(f"No se encontró el curso con nombre '{nombre}'.\n")
         self.buscar_curso()
     
-    #función para generar grafo bipartito
-    def generar_grafo_bipartito(self, datos):
-        grafo = nx.Graph()
-        
-        #conjunto de datos 'Cursos'
-        cursos = datos["Datos"][2]["Curso"]
-        #se crea un nodo por cada elemento del conjunto
-        for curso in cursos:
-            id_curso = curso["ID"]
-            grafo.add_node(id_curso, bipartite=0, tipo="Curso")
-
-        # Conjunto de datos 'Profesores'
-        profesores = datos["Datos"][0]["Profesor"]
-        #se crea un nodo por cada elemento del conjunto
-        for profesor in profesores:
-            nombre_profesor = profesor['Nombre']
-            grafo.add_node(nombre_profesor, bipartite=1, tipo="Profesor")
-
-        # Agregar aristas al grafo dependiendo cuales profesores estan disponibles para cada materia
-        for curso in cursos:
-            for profesor in profesores:
-                nombre_profesor = profesor['Nombre']
-                #si el profesor está disponible en ese curso, se crea una arista que los conecta
-                if nombre_profesor in curso["Profesores disponibles"]:
-                    id_curso = curso["ID"]
-                    grafo.add_edge(nombre_profesor, id_curso)
-        return grafo
-
-    #esta función imprime el grafo
-    def mostrar_nodos(self):
-        # esto colorea los nodos de tipo curso de color azul y los demás de rojo
-        colores = ['blue' if self.grafo.nodes[nodo]['tipo'] == 'Curso' else 'red' for nodo in self.grafo.nodes()]        
-        
-        #posiciona en pantalla el grafo de forma circular
-        pos = nx.circular_layout(self.grafo)
-        nx.draw(self.grafo, pos, with_labels=True, font_weight='bold', node_color=colores)
-        plt.show()
-
-    def generar_horario(self):
-        print("Horario ->")
-        for nodo in self.grafo.nodes:
-            if self.grafo.nodes[nodo]['tipo'] == 'Profesor':
-                cursos_asignados = list(self.grafo.neighbors(nodo))
-                if cursos_asignados:
-                    print(f"\nProfesor: {nodo}")
-                    for curso in cursos_asignados:
-                        print(f"  Curso: {curso}")
-        print("\nFin del horario")
-
 if __name__ == "__main__":
-    # Aquí deberías cargar tus datos desde el archivo JSON
+    # Carga datos desde el archivo JSON
     archivo_json = "Datos.json"
     with open(archivo_json, 'r', encoding='utf-8') as file:
         datos = json.load(file)
 
     grafo1 = Bipartito(datos)
-    grafo1.generar_horario()
+    
     grafo1.mostrar_nodos()
