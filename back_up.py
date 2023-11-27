@@ -57,7 +57,7 @@ class ScheduleGenerator:
 
         for subject in self.subjects:
             professor_mapping[subject] = random.choice(self.professors)
-
+        print(professor_mapping)
         return professor_mapping
 
 

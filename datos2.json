@@ -1,0 +1,413 @@
+{
+  "Datos": [
+    {
+      "Profesor": [
+        {
+          "id": 1001,
+          "Nombre": "LOPEZ ARCE DELGADO, JORGE ERNESTO",
+          "Horarios Disponibles": {
+            "lunes": [
+              "9:00-11:00",
+              "11:00-1:00"
+            ],
+            "miércoles": [
+              "9:00-11:00",
+              "11:00-1:00"
+            ]
+          }
+        },
+        {
+          "id": 1002,
+          "Nombre": "ESPINOZA VALDEZ, AURORA",
+          "Horarios Disponibles": {
+            "martes": [
+              "11:00-1:00",
+              "1:00-3:00"
+            ],
+            "jueves": [
+              "11:00-1:00",
+              "1:00-3:00"
+            ]
+          }
+        },
+        {
+          "id": 1003,
+          "Nombre": "HERNANDEZ CASAS, ANGEL TONATIUH",
+          "Horarios Disponibles": {
+            "lunes": [
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "miércoles": [
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "viernes": [
+              "3:00-5:00"
+            ]
+          }
+        },
+        {
+          "id": 1004,
+          "Nombre": "LANDA HORTA, DANIEL OMAR",
+          "Horarios Disponibles": {
+            "martes": [
+              "9:00-11:00",
+              "3:00-5:00"
+            ],
+            "jueves": [
+              "9:00-11:00",
+              "3:00-5:00"
+            ],
+            "sabado": [
+              "9:00-11:00"
+            ]
+          }
+        },
+        {
+          "id": 1005,
+          "Nombre": "MARTINEZ SOLTERO, ERASMO GABRIEL",
+          "Horarios Disponibles": {
+            "lunes": [
+              "9:00-11:00",
+              "11:00-1:00"
+            ],
+            "miércoles": [
+              "9:00-11:00",
+              "11:00-1:00"
+            ],
+            "viernes": [
+              "9:00-11:00",
+              "11:00-1:00"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Aula": [
+        {
+          "Numero": 1,
+          "Edificio": "X",
+          "Es laboratorio": true,
+          "Capacidad": 20,
+          "Horarios disponibles": {
+            "lunes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "martes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "miércoles": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "jueves": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "viernes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ]
+          }
+        },
+        {
+          "Numero": 2,
+          "Edificio": "X",
+          "Es laboratorio": true,
+          "Capacidad": 20,
+          "Horarios disponibles": {
+            "lunes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "martes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "miércoles": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "jueves": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "viernes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ]
+          }
+        },
+        {
+          "Numero": 3,
+          "Edificio": "X",
+          "Es laboratorio": true,
+          "Capacidad": 20,
+          "Horarios disponibles": {
+            "lunes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "martes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "miércoles": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "jueves": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "viernes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ]
+          }
+        },
+        {
+          "Numero": 4,
+          "Edificio": "X",
+          "Es laboratorio": true,
+          "Capacidad": 20,
+          "Horarios disponibles": {
+            "lunes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "martes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "miércoles": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "jueves": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "viernes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ]
+          }
+        },
+        {
+          "Numero": 5,
+          "Edificio": "X",
+          "Es laboratorio": true,
+          "Capacidad": 20,
+          "Horarios disponibles": {
+            "lunes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "martes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "miércoles": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "jueves": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ],
+            "viernes": [
+              "9:00-11:00",
+              "11:00-1:00",
+              "1:00-3:00",
+              "3:00-5:00"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Curso": [
+        {
+          "ID": 2001,
+          "Nombre": "INNOVACIÓN TECNOLÓGICA",
+          "Cantidad de horas": 4,
+          "Uso de laboratorio": false,
+          "Profesores disponibles": [
+            "LOPEZ ARCE DELGADO, JORGE ERNESTO",
+            "ESPINOZA VALDEZ, AURORA"
+          ],
+          "Cantidad máxima de alumnos": 40
+        },
+        {
+          "ID": 2002,
+          "Nombre": "INTERACCIÓN HUMANO COMPUTADORA",
+          "Cantidad de horas": 4,
+          "Uso de laboratorio": false,
+          "Profesores disponibles": [
+            "LHERNANDEZ CASAS, ANGEL TONATIUH",
+            "LANDA HORTA, DANIEL OMAR"
+          ],
+          "Cantidad máxima de alumnos": 40
+        },
+        {
+          "ID": 2003,
+          "Nombre": "INGENIERÍA DE SOFTWARE",
+          "Cantidad de horas": 6,
+          "Uso de laboratorio": true,
+          "Profesores disponibles": [
+            "MARTINEZ SOLTERO, ERASMO GABRIEL",
+            "CASILLAS ZAMORA, ANTONIO"
+          ],
+          "Cantidad máxima de alumnos": 20
+        },
+        {
+          "ID": 2004,
+          "Nombre": "PROGRAMACIÓN DE BAJO NIVEL",
+          "Cantidad de horas": 6,
+          "Uso de laboratorio": true,
+          "Profesores disponibles": [
+            "LOPEZ ARCE DELGADO, JORGE ERNESTO",
+            "ESPINOZA VALDEZ, AURORA"
+          ],
+          "Cantidad máxima de alumnos": 20
+        },
+        {
+          "ID": 2005,
+          "Nombre": "ANÁLISIS DE ALGORITMOS",
+          "Cantidad de horas": 4,
+          "Uso de laboratorio": true,
+          "Profesores disponibles": [
+            "ARENAS YERENA, CARLOS DARIO",
+            "PEREZ TORRES, GRISELDA"
+          ],
+          "Cantidad máxima de alumnos": 20
+        }
+      ]
+    },
+    {
+      "Seccion": [
+        {
+          "ID": 1,
+          "Profesor asignado": "LOPEZ ARCE DELGADO, JORGE ERNESTO",
+          "Horario": {
+            "lunes": [
+              "09:00 - 11:00"
+            ],
+            "miércoles": [
+              "09:00 - 11:00"
+            ]
+          },
+          "Curso": "INNOVACIÓN TECNOLÓGICA"
+        },
+        {
+          "ID": 2,
+          "Profesor asignado": "ESPINOZA VALDEZ, AURORA",
+          "Horario": {
+            "martes": [
+              "11:00 - 13:00"
+            ],
+            "jueves": [
+              "11:00 - 13:00"
+            ]
+          },
+          "Curso": "INNOVACIÓN TECNOLÓGICA"
+        },
+        {
+          "ID": 3,
+          "Profesor asignado": "HERNANDEZ CASAS, ANGEL TONATIUH",
+          "Horario": {
+            "lunes": [
+              "13:00 - 15:00"
+            ],
+            "miércoles": [
+              "13:00 - 15:00"
+            ]
+          },
+          "Curso": "INTERACCIÓN HUMANO COMPUTADORA"
+        },
+        {
+          "ID": 4,
+          "Profesor asignado": "LANDA HORTA, DANIEL OMAR",
+          "Horario": {
+            "martes": [
+              "15:00 - 17:00"
+            ],
+            "jueves": [
+              "15:00 - 17:00"
+            ]
+          },
+          "Curso": "INTERACCIÓN HUMANO COMPUTADORA"
+        },
+        {
+          "ID": 5,
+          "Profesor asignado": "MARTINEZ SOLTERO, ERASMO GABRIEL",
+          "Horario": {
+            "lunes": [
+              "09:00 - 11:00"
+            ],
+            "miércoles": [
+              "09:00 - 11:00"
+            ],
+            "viernes": [
+              "09:00 - 11:00"
+            ]
+          },
+          "Curso": "INGENIERÍA DE SOFTWARE"
+        }
+      ]
+    }
+  ]
+}
