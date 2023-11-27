@@ -36,6 +36,7 @@ class Seccion:
         self.horario = horario
         self.dias = dias
         self.curso = curso
+
 #Grafo bipartito
 class Bipartito:
     def __init__(self,grafo):
@@ -128,6 +129,7 @@ class Bipartito:
     
     #busca los profesores desde un diccionario
     def buscarProfe(self):
+        grafo, grafoS = self.grafo
         # Obtener la lista de profesores del archivo JSON
         profesores = datos["Datos"][0]["Profesor"]
         nombre = str(input('Qué profesor buscas? -> '))
@@ -136,7 +138,7 @@ class Bipartito:
             if nombre.upper() in profesor['Nombre'].upper():
                 print(f"Profesor encontrado -> \nID: {profesor['id']}\nNombre: {profesor['Nombre']}\nHorarios disponibles: {profesor['Horarios Disponibles']}")
                 print(f"Cursos que imparte -> \n")
-                for curso in self.grafo.neighbors(profesor['Nombre']):
+                for curso in grafo.neighbors(profesor['Nombre']):
                     print(f' - {curso}')
                 return
         print(f"No se encontró ningún profesor con el nombre '{nombre}'.")
@@ -156,23 +158,63 @@ class Bipartito:
 
     #busca los cursos disponibles
     def buscar_curso(self):
+        grafo, grafoS = self.grafo
         cursos = datos['Datos'][2]['Curso']
         nombre = str(input('Escribe nombre del curso -> '))
         for curso in cursos:
             if nombre.upper() in curso['Nombre'].upper():
                 print(f"Curso encontrado -> \nID: {curso['ID']} \nNombre: {curso['Nombre']}\n")
                 print(f"Profesores que imparten la clase -> \n")
-                for profesor in self.grafo.neighbors(curso['ID']):
+                for profesor in grafo.neighbors(curso['ID']):
                     print(f' - {profesor}')
                 return
         print(f"No se encontró el curso con nombre '{nombre}'.\n")
         self.buscar_curso()
     
+class Horario:
+    #crear horarios para cada estudiante y profesor
+    def __init__(self,datos):
+        grafo = Bipartito(datos)
+        self.grafoCyP, self.grafoCyS = grafo.grafo_bipartito(datos)
+
+    def generar_horario(self):
+        horarios_por_dia = {dia: [] for dia in ['lunes', 'martes', 'miércoles', 'jueves', 'viernes']}
+        aulas = datos["Datos"][1]["Aula"]
+        secciones = datos["Datos"][3]["Seccion"]
+
+        for seccion in secciones:
+            horario = seccion["Horario"]
+            curso = self.grafoCyS.neighbors(seccion["ID"])
+
+            for aula in aulas:
+                for dia in horario.keys():  # Utilizamos las claves del diccionario de horario
+                    horadisponible = aula["Horarios disponibles"].get(dia, [])
+                    # Comprobar si alguna de las horas de la sección coincide con alguna de las horas disponibles en el aula
+                    if horadisponible is not None:
+                        if horario in horadisponible:
+                            horarios_por_dia[dia].append({
+                                "curso": curso,
+                                "seccion": seccion["ID"],
+                                "aula": aula["Numero"],
+                                "horario": horario
+                            })
+                            horadisponible[dia].pop(horario)
+                            break
+        return horarios_por_dia
+
 if __name__ == "__main__":
-    # Carga datos desde el archivo JSON
-    archivo_json = "Datos.json"
+    # Carga tus datos desde el archivo JSON
+    archivo_json = "datos2.json"
     with open(archivo_json, 'r', encoding='utf-8') as file:
         datos = json.load(file)
 
     grafo1 = Bipartito(datos)
     grafo1.mostrar_nodos()
+    horario1 = Horario(datos)
+    horarios_por_dia=horario1.generar_horario()
+
+    # Imprimir horarios por día
+    for dia, horarios in horarios_por_dia.items():
+        print(f"Horarios para el día {dia}:")
+        for horario in horarios:
+            print(f"  Curso: {horario['curso']}, Sección: {horario['seccion']}, Aula: {horario['aula']}, Horario: {horario['horario']}")
