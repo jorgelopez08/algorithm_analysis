@@ -36,7 +36,6 @@ class Seccion:
         self.horario = horario
         self.dias = dias
         self.curso = curso
-
 #Grafo bipartito
 class Bipartito:
     def __init__(self,grafo):
@@ -44,40 +43,75 @@ class Bipartito:
 
     #función para generar grafo bipartito
     def grafo_bipartito(self, datos):
-        grafo = nx.Graph()
-            
-        #conjunto de datos 'Cursos'
-        cursos = datos["Datos"][2]["Curso"]
+        grafoCyP = nx.Graph()       # grafo bipartito de Cursos y profes
+        grafoCyS =nx.Graph()        # grafo bipartito de cursos y secciones
+
+        # Conjunto de Datos "Cursos"    
+        cursos = datos["Datos"][2]['Curso']
         #se crea un nodo por cada elemento del conjunto
         for curso in cursos:
             id_curso = curso["ID"]
-            grafo.add_node(id_curso, bipartite=0, tipo="Curso")
+            grafoCyP.add_node(id_curso, bipartite=0, tipo="Curso")
+            grafoCyS.add_node(id_curso, bipartite=0, tipo="Curso")
 
         # Conjunto de datos 'Profesores'
         profesores = datos["Datos"][0]["Profesor"]
         #se crea un nodo por cada elemento del conjunto
         for profesor in profesores:
             nombre_profesor = profesor['Nombre']
-            grafo.add_node(nombre_profesor, bipartite=1, tipo="Profesor")
+            grafoCyP.add_node(nombre_profesor, bipartite=1, tipo="Profesor")
 
-        # Agregar aristas al grafo dependiendo cuales profesores estan disponibles para cada materia
+        # Conjunto de datos "Secciones"
+        secciones = datos["Datos"][3]["Seccion"]
+        #se crea un nodo por cada elemento del conjunto
+        for seccion in secciones:
+            id_seccion= seccion["ID"]
+            grafoCyS.add_node(id_seccion, bipartite=1, tipo="Seccion")
+
+        # Agregar aristas al grafo 1 dependiendo cuales profesores estan disponibles para cada materia
         for curso in cursos:
             for profesor in profesores:
                 nombre_profesor = profesor['Nombre']
                 #si el profesor está disponible en ese curso, se crea una arista que los conecta
                 if nombre_profesor in curso["Profesores disponibles"]:
                     id_curso = curso["ID"]
-                    grafo.add_edge(nombre_profesor, id_curso)
-        return grafo
+                    grafoCyP.add_edge(nombre_profesor, id_curso)
+
+        # Agregar aristas al grafd 2 dependiemdp de cuáles curson hay en cada sección
+        for seccion in secciones:
+            for curso in cursos:
+                nombre_curso = curso["Nombre"]
+                #si la sección es compatible con el curso, se crea una arista que las conecta
+                if nombre_curso.upper() in seccion["Curso"].upper():
+                    id_curso = curso["ID"]
+                    id_seccion = seccion["ID"]
+                    grafoCyS.add_edge(id_seccion, id_curso)
+
+        return grafoCyP, grafoCyS
     
-    #esta función imprime el grafo
     def mostrar_nodos(self):
+        grafo, grafoS = self.grafo
+        
         # esto colorea los nodos de tipo curso de color azul y los demás de rojo
-        colores = ['blue' if self.grafo.nodes[nodo]['tipo'] == 'Curso' else 'red' for nodo in self.grafo.nodes()]        
+        colores = ['blue' if grafo.nodes[nodo]['tipo'] == 'Curso' else 'red' for nodo in grafo.nodes()]        
+        coloresS = ['green' if grafoS.nodes[nodo]['tipo'] == 'Curso' else 'yellow' for nodo in grafoS.nodes()]        
         
         #posiciona en pantalla el grafo de forma circular
-        pos = nx.circular_layout(self.grafo)
-        nx.draw(self.grafo, pos, with_labels=True, font_weight='bold', node_color=colores)
+        pos = nx.circular_layout(grafo)
+        posS = nx.spring_layout(grafoS)
+        
+        # Crea un nuevo gráfico de subplots
+        fig, axs = plt.subplots(1, 2)
+        
+        # Dibuja el primer grafo en el primer panel
+        axs[0].set_title('Grafo de Cursos y profesores')
+        nx.draw(grafo, pos, with_labels=True, font_weight='bold', node_color=colores, ax=axs[0])
+        
+        # Dibuja el segundo grafo en el segundo panel
+        axs[1].set_title('Grafo de sección y cursos')
+        nx.draw(grafoS, posS, with_labels=True, font_weight='bold', node_color=coloresS, ax=axs[1])
+        
+        # Muestra los gráficos en pantalla
         plt.show()
 
     #muestra todos los profesores disponibles
@@ -141,5 +175,4 @@ if __name__ == "__main__":
         datos = json.load(file)
 
     grafo1 = Bipartito(datos)
-    
     grafo1.mostrar_nodos()
