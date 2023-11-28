@@ -60,6 +60,36 @@ class ScheduleGenerator:
 
         return professor_mapping
 
+    def export_to_file(self):
+        days = {}
+        for subject, details in schedule_generator.schedule.items():
+            details["Subject"] = subject
+            if details["Day"] not in days:
+                days[details["Day"]] = [details]
+            else:
+                days[details["Day"]].append(details)
+
+        clean_schedule = {}
+        days_list = ['Monday-Wednesday', 'Tuesday-Thursday', 'Wednesday-Friday']
+        for day in days_list:
+            print(day)
+            clean_schedule[day] = []
+            for schedule in days[day]:
+                clean_schedule[day].append({
+                    "materia": schedule['Subject'],
+                    "aula": f"{schedule['Classroom']['Edificio']}-{schedule['Classroom']['Numero']}",
+                    "profesor": schedule['Professor'],
+                    "hora": schedule['Time']
+                })
+                print(f"{schedule['Subject']}\t | "
+                      f"{schedule['Classroom']['Edificio']}-{schedule['Classroom']['Numero']} "
+                      f"| {schedule['Professor']} | {schedule['Time']} | {schedule['Day']}")
+            print()
+
+        with open('schedule.json', 'w+') as f:
+            f.write(json.dumps(clean_schedule, indent=2))
+            f.close()
+
 
 # Example data
 # subjects = ['Subject{}'.format(i) for i in range(1, 61)]
@@ -86,31 +116,4 @@ if __name__ == "__main__":
     schedule_generator.generate_schedule()
 
     # Print the generated schedule
-    days = {}
-    for subject, details in schedule_generator.schedule.items():
-        details["Subject"] = subject
-        if details["Day"] not in days:
-            days[details["Day"]] = [details]
-        else:
-            days[details["Day"]].append(details)
-
-    clean_schedule = {}
-    days_list = ['Monday-Wednesday', 'Tuesday-Thursday', 'Wednesday-Friday']
-    for day in days_list:
-        print(day)
-        clean_schedule[day] = []
-        for schedule in days[day]:
-            clean_schedule[day].append({
-                "materia": schedule['Subject'],
-                "aula": f"{schedule['Classroom']['Edificio']}-{schedule['Classroom']['Numero']}",
-                "profesor": schedule['Professor'],
-                "hora": schedule['Time']
-            })
-            print(f"{schedule['Subject']}\t | "
-                  f"{schedule['Classroom']['Edificio']}-{schedule['Classroom']['Numero']} "
-                  f"| {schedule['Professor']} | {schedule['Time']} | {schedule['Day']}")
-        print()
-
-    with open('schedule.json', 'w+') as f:
-        f.write(json.dumps(clean_schedule, indent=2))
-        f.close()
+    schedule_generator.export_to_file()
