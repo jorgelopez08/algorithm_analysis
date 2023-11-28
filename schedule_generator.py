@@ -1,9 +1,8 @@
 import json
 import random
 
-
 class ScheduleGenerator:
-    def __init__(self, subjects, professors, classrooms, time_slots, days, max_subjects_per_professor=5):
+    def __init__(self, subjects, professors, classrooms, time_slots, days, max_subjects_per_professor=2):
         self.subjects = subjects
         self.professors = professors
         self.classrooms = classrooms
@@ -31,8 +30,9 @@ class ScheduleGenerator:
             for time in self.time_slots:
                 for classroom in self.classrooms:
                     professor = self.professor_mapping[subject["Nombre"]]
-                    if self.is_slot_available(professor, classroom, time, day, subject["Nombre"]):
-                        return professor, classroom, time, day
+                    if classroom["Es laboratorio"] == subject["Uso de laboratorio"]:
+                        if self.is_slot_available(professor, classroom, time, day, subject["Nombre"]):
+                            return professor, classroom, time, day
         return None, None, None, None
 
     def is_slot_available(self, professor, classroom, time, day, subject):
