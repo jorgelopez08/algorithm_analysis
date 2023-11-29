@@ -664,7 +664,7 @@
         {
             "ID" : 2003,
             "Nombre" : "INGENIERÍA DE SOFTWARE",
-            "Cantidad de horas" : 6,
+            "Cantidad de horas" : 4,
             "Uso de laboratorio" : true,
             "Profesores disponibles" : 
             [
@@ -676,7 +676,7 @@
         {
             "ID" : 2004,
             "Nombre" : "PROGRAMACIÓN DE BAJO NIVEL",
-            "Cantidad de horas" : 6,
+            "Cantidad de horas" : 4,
             "Uso de laboratorio" : true,
             "Profesores disponibles" : 
             [
@@ -700,7 +700,7 @@
         {
             "ID" : 2006,
             "Nombre" : "BASES DE DATOS",
-            "Cantidad de horas" : 6,
+            "Cantidad de horas" : 4,
             "Uso de laboratorio" : true,
             "Profesores disponibles" : 
             [
@@ -712,7 +712,7 @@
         {
             "ID" : 2007,
             "Nombre" : "SISTEMAS OPERATIVOS",
-            "Cantidad de horas" : 6,
+            "Cantidad de horas" : 4,
             "Uso de laboratorio" : true,
             "Profesores disponibles" : 
             [
@@ -760,7 +760,7 @@
         {
             "ID" : 2011,
             "Nombre" : "ESTRUCTURA DE DATOS",
-            "Cantidad de horas" : 6,
+            "Cantidad de horas" : 4,
             "Uso de laboratorio" : true,
             "Profesores disponibles" : 
             [
@@ -808,7 +808,7 @@
         {
             "ID" : 2015,
             "Nombre" : "PROGRAMACIÓN PARA INTERNET",
-            "Cantidad de horas" : 6,
+            "Cantidad de horas" : 4,
             "Uso de laboratorio" : true,
             "Profesores disponibles" : 
             [
@@ -832,7 +832,7 @@
         {
             "ID" : 2017,
             "Nombre" : "PROGRAMACIÓN ORIENTADA A OBJETOS",
-            "Cantidad de horas" : 6,
+            "Cantidad de horas" : 4,
             "Uso de laboratorio" : true,
             "Profesores disponibles" : 
             [
@@ -880,7 +880,7 @@
         {
             "ID" : 2021,
             "Nombre" : "SISTEMAS DIGITALES",
-            "Cantidad de horas" : 6,
+            "Cantidad de horas" : 4,
             "Uso de laboratorio" : true,
             "Profesores disponibles" : 
             [
@@ -904,7 +904,7 @@
         {
             "ID" : 2023,
             "Nombre" : "PROGRAMACIÓN ESTRUCTURADA",
-            "Cantidad de horas" : 6,
+            "Cantidad de horas" : 4,
             "Uso de laboratorio" : true,
             "Profesores disponibles" : 
             [
@@ -976,7 +976,7 @@
         {
             "ID" : 2029,
             "Nombre" : "FUNDAMENTOS DE PROGRAMACIÓN",
-            "Cantidad de horas" : 6,
+            "Cantidad de horas" : 4,
             "Uso de laboratorio" : true,
             "Profesores disponibles" : 
             [
