@@ -70,7 +70,7 @@ class ScheduleGenerator:
                 days[details["Day"]].append(details)
 
         clean_schedule = {}
-        days_list = ['Monday-Wednesday', 'Tuesday-Thursday', 'Wednesday-Friday']
+        days_list = ['Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday']
         for day in days_list:
             print(day)
             clean_schedule[day] = []
@@ -107,7 +107,7 @@ if __name__ == "__main__":
     professors = [profesor for profesor in (datos["Datos"][0]["Profesor"])]
     classrooms = [aula for aula in (datos["Datos"][1]["Aula"])]
     time_slots = ['9:00-11:00', '11:00-1:00', '1:00-3:00', '3:00-5:00']
-    days_list = ['Monday-Wednesday', 'Tuesday-Thursday', 'Wednesday-Friday']
+    days_list = ['Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday']
 
     # Create ScheduleGenerator instance
     schedule_generator = ScheduleGenerator(subjects, professors, classrooms, time_slots, days_list)
