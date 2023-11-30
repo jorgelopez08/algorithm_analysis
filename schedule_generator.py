@@ -14,7 +14,7 @@ class ScheduleGenerator:
         self.schedule = {}
         self.professor_mapping = self.generate_random_professor_mapping()
 
-    def generate_schedule(self):
+    def generate_schedule(self, num):
         for subject in self.subjects:
             for _ in range(2):  # For each subject, try scheduling two classes
                 professor, classroom, time, day = self.find_available_slot(subject)
@@ -150,3 +150,4 @@ if __name__ == "__main__":
 
     # Print the generated schedule
     schedule_generator.export_to_file()
+
