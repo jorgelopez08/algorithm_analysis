@@ -48,6 +48,13 @@ class ScheduleGenerator:
             # Allow multiple classes in different classrooms at the same time
             if details['Time'] == time and details['Day'] == day and details['Classroom'] != classroom:
                 continue
+            # Block hours on two specified days for each class schedule
+            if day in ['Monday', 'Wednesday'] and details['Day'] in ['Monday', 'Wednesday'] and details['Time'] == time:
+                return False
+            if day in ['Tuesday', 'Thursday'] and details['Day'] in ['Tuesday', 'Thursday'] and details['Time'] == time:
+                return False
+            if day in ['Wednesday', 'Friday'] and details['Day'] in ['Wednesday', 'Friday'] and details['Time'] == time:
+                return False
         return True
 
     def days_difference(self, day1, day2):
@@ -71,7 +78,8 @@ class ScheduleGenerator:
                 days[details["Day"]].append(details)
 
         clean_schedule = {}
-        days_list = ['Monday-Wednesday', 'Tuesday-Thursday', 'Wednesday-Friday']
+        # days_list = ['Monday-Wednesday', 'Tuesday-Thursday', 'Wednesday-Friday']
+        days_list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
         schedule_view = ""
         for day in days_list:
             print(day)
@@ -105,3 +113,23 @@ class ScheduleGenerator:
 # subjects = ['Subject{}'.format(i) for i in range(1, 61)]
 # professors = ['Professor{}'.format(i) for i in range(1, 21)]
 # classrooms = ['Classroom{}'.format(i) for i in range(1, 26)]
+if __name__ == "__main__":
+    # Carga tus datos desde el archivo JSON
+    archivo_json = "Datos.json"
+    with open(archivo_json, 'r', encoding='utf-8') as file:
+        datos = json.load(file)
+
+    subjects = [curso for curso in (datos["Datos"][2]["Curso"])]
+    professors = [profesor for profesor in (datos["Datos"][0]["Profesor"])]
+    classrooms = [aula for aula in (datos["Datos"][1]["Aula"])]
+    time_slots = ['9:00-11:00', '11:00-1:00', '1:00-3:00', '3:00-5:00']
+    days_list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+
+    # Create ScheduleGenerator instance
+    schedule_generator = ScheduleGenerator(subjects, professors, classrooms, time_slots, days_list)
+
+    # Generate schedule for the whole week
+    schedule_generator.generate_schedule()
+
+    # Print the generated schedule
+    schedule_generator.export_to_file()
