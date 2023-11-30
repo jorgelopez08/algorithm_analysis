@@ -1,8 +1,10 @@
 import json
 import random
 
+
+
 class ScheduleGenerator:
-    def __init__(self, subjects, professors, classrooms, time_slots, days, max_subjects_per_professor=2):
+    def __init__(self, subjects, professors, classrooms, time_slots, days, max_subjects_per_professor=5):
         self.subjects = subjects
         self.professors = professors
         self.classrooms = classrooms
@@ -30,9 +32,8 @@ class ScheduleGenerator:
             for time in self.time_slots:
                 for classroom in self.classrooms:
                     professor = self.professor_mapping[subject["Nombre"]]
-                    if classroom["Es laboratorio"] == subject["Uso de laboratorio"]:
-                        if self.is_slot_available(professor, classroom, time, day, subject["Nombre"]):
-                            return professor, classroom, time, day
+                    if self.is_slot_available(professor, classroom, time, day, subject["Nombre"]):
+                        return professor, classroom, time, day
         return None, None, None, None
 
     def is_slot_available(self, professor, classroom, time, day, subject):
@@ -62,7 +63,7 @@ class ScheduleGenerator:
 
     def export_to_file(self):
         days = {}
-        for subject, details in schedule_generator.schedule.items():
+        for subject, details in self.schedule.items():
             details["Subject"] = subject
             if details["Day"] not in days:
                 days[details["Day"]] = [details]
@@ -70,9 +71,11 @@ class ScheduleGenerator:
                 days[details["Day"]].append(details)
 
         clean_schedule = {}
-        days_list = ['Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday']
+        days_list = ['Monday-Wednesday', 'Tuesday-Thursday', 'Wednesday-Friday']
+        schedule_view = ""
         for day in days_list:
             print(day)
+            schedule_view = schedule_view + day + "\n"
             clean_schedule[day] = []
             for schedule in days[day]:
                 clean_schedule[day].append({
@@ -84,36 +87,21 @@ class ScheduleGenerator:
                 print(f"{schedule['Subject']}\t | "
                       f"{schedule['Classroom']['Edificio']}-{schedule['Classroom']['Numero']} "
                       f"| {schedule['Professor']} | {schedule['Time']} | {schedule['Day']}")
+                schedule_view = schedule_view + (f"{schedule['Subject']}\t | "
+                                f"{schedule['Classroom']['Edificio']}-{schedule['Classroom']['Numero']} "
+                                f"| {schedule['Professor']} | {schedule['Time']} | {schedule['Day']}") + "\n"
             print()
+            schedule_view = schedule_view + "\n"
+
 
         with open('schedule.json', 'w+') as f:
             f.write(json.dumps(clean_schedule, indent=2))
             f.close()
+
+        return schedule_view
 
 
 # Example data
 # subjects = ['Subject{}'.format(i) for i in range(1, 61)]
 # professors = ['Professor{}'.format(i) for i in range(1, 21)]
 # classrooms = ['Classroom{}'.format(i) for i in range(1, 26)]
-
-
-if __name__ == "__main__":
-    # Carga tus datos desde el archivo JSON
-    archivo_json = "Datos.json"
-    with open(archivo_json, 'r', encoding='utf-8') as file:
-        datos = json.load(file)
-
-    subjects = [curso for curso in (datos["Datos"][2]["Curso"])]
-    professors = [profesor for profesor in (datos["Datos"][0]["Profesor"])]
-    classrooms = [aula for aula in (datos["Datos"][1]["Aula"])]
-    time_slots = ['9:00-11:00', '11:00-1:00', '1:00-3:00', '3:00-5:00']
-    days_list = ['Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday']
-
-    # Create ScheduleGenerator instance
-    schedule_generator = ScheduleGenerator(subjects, professors, classrooms, time_slots, days_list)
-
-    # Generate schedule for the whole week
-    schedule_generator.generate_schedule()
-
-    # Print the generated schedule
-    schedule_generator.export_to_file()

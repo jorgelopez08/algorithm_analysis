@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias = "visualize_icon_off">icons/eye-2-32.ico</file>
+        <file>icons/eye-2-48.ico</file>
+        <file>icons/upload-3-32.ico</file>
+        <file alias = "close_icon">icons/close-window-64.ico</file>
+        <file alias = "download_icon_off">icons/download-2-32.ico</file>
+        <file>icons/download-2-48.ico</file>
+        <file alias = "home_icon_off">icons/home-2-32.ico</file>
+        <file>icons/home-2-48.ico</file>
+        <file alias = "logo_icon">icons/logo_temporal.png</file>
+        <file alias = "menu_icon">icons/menu-4-32.ico</file>
+        <file alias = "register_icon_off">icons/register-32.ico</file>
+        <file>icons/register-48.ico</file>
+    </qresource>
+</RCC>
