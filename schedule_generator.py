@@ -19,7 +19,17 @@ class ScheduleGenerator:
             for _ in range(2):  # For each subject, try scheduling two classes
                 professor, classroom, time, day = self.find_available_slot(subject)
                 if professor is not None:
-                    self.schedule[subject["Nombre"]] = {'Professor': professor, 'Classroom': classroom, 'Time': time, 'Day': day}
+                    # self.schedule[subject["Nombre"]] = {'Professor': professor, 'Classroom': classroom, 'Time': time, 'Day': day}
+                    if day == 'Monday':
+                        self.schedule[subject["Nombre"]] = {'Professor': professor, 'Classroom': classroom,
+                                                            'Time': time, 'Day': ['Monday', 'Wednesday']}
+
+                    elif day == 'Tuesday':
+                        self.schedule[subject["Nombre"]] = {'Professor': professor, 'Classroom': classroom,
+                                                            'Time': time, 'Day': ['Tuesday', 'Thursday']}
+                    elif day == 'Wednesday':
+                        self.schedule[subject["Nombre"]] = {'Professor': professor, 'Classroom': classroom,
+                                                            'Time': time, 'Day': ['Wednesday', 'Friday']}
                 else:
                     print(f"No available slot found for {subject}. Schedule incomplete.")
                     break
@@ -39,8 +49,10 @@ class ScheduleGenerator:
     def is_slot_available(self, professor, classroom, time, day, subject):
         for existing_subject, details in self.schedule.items():
             # Allow professors to be scheduled for multiple classes at different times
-            if details['Professor'] == professor and details['Time'] == time and self.days_difference(details['Day'],
-                                                                                                      day) >= 1:
+            if (details['Professor'] == professor
+                    and details['Time'] == time
+                    and self.days_difference(details['Day'][0], day) >= 1
+                    and self.days_difference(details['Day'][1], day) >= 1):
                 continue
             # Ensure subjects are not scheduled on the same day and time
             if details['Day'] == day and details['Time'] == time and existing_subject != subject:
@@ -54,6 +66,10 @@ class ScheduleGenerator:
             if day in ['Tuesday', 'Thursday'] and details['Day'] in ['Tuesday', 'Thursday'] and details['Time'] == time:
                 return False
             if day in ['Wednesday', 'Friday'] and details['Day'] in ['Wednesday', 'Friday'] and details['Time'] == time:
+                return False
+
+            # Ensure two classes are not scheduled at the same time in the same classroom
+            if details['Time'] == time and details['Day'] == day and details['Classroom'] == classroom:
                 return False
         return True
 
@@ -72,10 +88,11 @@ class ScheduleGenerator:
         days = {}
         for subject, details in self.schedule.items():
             details["Subject"] = subject
-            if details["Day"] not in days:
-                days[details["Day"]] = [details]
-            else:
-                days[details["Day"]].append(details)
+            for i in range(0, len(details['Day'])):
+                if details["Day"][i] not in days:
+                    days[details["Day"][i]] = [details]
+                else:
+                    days[details["Day"][i]].append(details)
 
         clean_schedule = {}
         # days_list = ['Monday-Wednesday', 'Tuesday-Thursday', 'Wednesday-Friday']
@@ -94,10 +111,10 @@ class ScheduleGenerator:
                 })
                 print(f"{schedule['Subject']}\t | "
                       f"{schedule['Classroom']['Edificio']}-{schedule['Classroom']['Numero']} "
-                      f"| {schedule['Professor']} | {schedule['Time']} | {schedule['Day']}")
+                      f"| {schedule['Professor']} | {schedule['Time']}")
                 schedule_view = schedule_view + (f"{schedule['Subject']}\t | "
                                 f"{schedule['Classroom']['Edificio']}-{schedule['Classroom']['Numero']} "
-                                f"| {schedule['Professor']} | {schedule['Time']} | {schedule['Day']}") + "\n"
+                                f"| {schedule['Professor']} | {schedule['Time']}") + "\n"
             print()
             schedule_view = schedule_view + "\n"
 

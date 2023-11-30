@@ -1,216 +1,348 @@
 {
   "Monday": [
     {
-      "materia": "ESTRUCTURA DE DATOS",
-      "aula": "X-4",
-      "profesor": "ESTRADA GUZMAN, ELSA",
-      "hora": "1:00-3:00"
-    },
-    {
-      "materia": "PROGRAMACI\u00d3N PARA INTERNET",
-      "aula": "X-9",
-      "profesor": "HINOJOSA CERVANTES, SALVADOR MIGUEL",
-      "hora": "9:00-11:00"
-    },
-    {
-      "materia": "PROGRAMACI\u00d3N ESTRUCTURADA",
-      "aula": "X-3",
-      "profesor": "PEREZ TORRES, GRISELDA",
-      "hora": "9:00-11:00"
-    },
-    {
-      "materia": "MEC\u00c1NICA",
-      "aula": "X-5",
-      "profesor": "RIOS ARRA\u00d1AGA, JORGE DANIEL",
-      "hora": "9:00-11:00"
-    },
-    {
-      "materia": "EXPRESI\u00d3N ORAL Y ESCRITA",
-      "aula": "X-19",
-      "profesor": "MORALES RAMIREZ, THELMA ISABEL",
-      "hora": "1:00-3:00"
-    },
-    {
-      "materia": "L\u00d3GICA MATEM\u00c1TICA",
-      "aula": "X-9",
-      "profesor": "LARA LOPEZ, GRACIELA",
-      "hora": "1:00-3:00"
-    },
-    {
-      "materia": "PREC\u00c1LCULO",
-      "aula": "X-9",
-      "profesor": "GUERRERO CARLOS, ANA JAZMIN",
-      "hora": "9:00-11:00"
-    },
-    {
-      "materia": "FUNDAMENTOS DE F\u00cdSICA",
-      "aula": "X-4",
-      "profesor": "MU\u00d1OZ GOMEZ, LUIS ALBERTO",
-      "hora": "9:00-11:00"
-    },
-    {
-      "materia": "\u00c9TICA Y LEGISLACI\u00d3N",
-      "aula": "X-1",
-      "profesor": "VERA SORIA, FRANCISCO",
-      "hora": "1:00-3:00"
-    },
-    {
-      "materia": "TEOR\u00cdA DE LA COMPUTACI\u00d3N",
-      "aula": "X-5",
-      "profesor": "SANTIAGO HERNANDEZ, ELOISA",
-      "hora": "1:00-3:00"
-    }
-  ],
-  "Tuesday": [
-    {
       "materia": "INTERACCI\u00d3N HUMANO COMPUTADORA",
-      "aula": "X-13",
-      "profesor": "LHERNANDEZ CASAS, ANGEL TONATIUH",
-      "hora": "3:00-5:00"
+      "aula": "X-3",
+      "profesor": "LANDA HORTA, DANIEL OMAR",
+      "hora": "1:00-3:00"
     },
-    {
-      "materia": "PROGRAMACI\u00d3N DE BAJO NIVEL",
-      "aula": "X-5",
-      "profesor": "ESPINOZA VALDEZ, AURORA",
-      "hora": "9:00-11:00"
-    },
-    {
-      "materia": "AN\u00c1LISIS DE ALGORITMOS",
-      "aula": "X-5",
-      "profesor": "PEREZ TORRES, GRISELDA",
-      "hora": "3:00-5:00"
-    },
-    {
-      "materia": "M\u00c9TODOS NUM\u00c9RICOS",
-      "aula": "X-20",
-      "profesor": "GUTIERREZ HERNANDEZ, ALFREDO",
-      "hora": "9:00-11:00"
-    },
-    {
-      "materia": "PROGRAMACI\u00d3N ORIENTADA A OBJETOS",
-      "aula": "X-8",
-      "profesor": "RAMIREZ MORENO, BENJAMIN",
-      "hora": "9:00-11:00"
-    }
-  ],
-  "Wednesday": [
     {
       "materia": "BASES DE DATOS",
-      "aula": "X-13",
+      "aula": "X-5",
       "profesor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN",
-      "hora": "11:00-1:00"
-    },
-    {
-      "materia": "SISTEMAS OPERATIVOS",
-      "aula": "X-19",
-      "profesor": "VALDES LOPEZ, JULIO ESTEBAN",
-      "hora": "3:00-5:00"
+      "hora": "9:00-11:00"
     },
     {
       "materia": "SEMINARIO DE INTEGRACI\u00d3N PROTOCOLO",
-      "aula": "X-1",
-      "profesor": "BARBA VENEGAS, MIGUEL ANGEL",
-      "hora": "11:00-1:00"
-    },
-    {
-      "materia": "PROBABILIDAD Y ESTAD\u00cdSTICA",
-      "aula": "X-15",
-      "profesor": "LARA LOPEZ, GRACIELA",
+      "aula": "X-17",
+      "profesor": "MORALES RAMIREZ, THELMA ISABEL",
       "hora": "11:00-1:00"
     },
     {
       "materia": "ARQUITECTURA DE COMPUTADORAS",
-      "aula": "X-19",
-      "profesor": "MU\u00d1OZ GOMEZ, LUIS ALBERTO",
-      "hora": "11:00-1:00"
-    },
-    {
-      "materia": "ADMINISTRACI\u00d3N DE PROYECTOS TECNOL\u00d3GICOS",
-      "aula": "X-16",
-      "profesor": "REYNOSO GOMEZ, BLANCA LORENA",
+      "aula": "X-13",
+      "profesor": "GALVEZ LOPEZ, HECTOR ALEJANDRO",
       "hora": "3:00-5:00"
     },
     {
-      "materia": "INTRODUCCI\u00d3N A LA INGENIER\u00cdA",
-      "aula": "X-3",
-      "profesor": "HINOJOSA CERVANTES, SALVADOR MIGUEL",
-      "hora": "11:00-1:00"
-    }
-  ],
-  "Thursday": [
-    {
-      "materia": "INNOVACI\u00d3N TECNOL\u00d3GICA",
-      "aula": "X-2",
-      "profesor": "LOPEZ ARCE DELGADO, JORGE ERNESTO",
-      "hora": "11:00-1:00"
-    },
-    {
-      "materia": "INGENIER\u00cdA DE SOFTWARE",
-      "aula": "X-19",
-      "profesor": "CASILLAS ZAMORA, ANTONIO",
-      "hora": "1:00-3:00"
-    },
-    {
-      "materia": "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL",
-      "aula": "X-2",
-      "profesor": "RIOS ARRA\u00d1AGA, JORGE DANIEL",
-      "hora": "11:00-1:00"
-    },
-    {
-      "materia": "LIDERAZGO Y EMPRENDIMIENTO",
-      "aula": "X-9",
-      "profesor": "VERA SORIA, FRANCISCO",
-      "hora": "1:00-3:00"
-    },
-    {
-      "materia": "\u00c1LGEBRA LINEAL",
-      "aula": "X-13",
-      "profesor": "BUENROSTRO ARCEO, ROSALIA",
-      "hora": "1:00-3:00"
-    },
-    {
-      "materia": "ADMINISTRACI\u00d3N",
-      "aula": "X-5",
-      "profesor": "CAMACHO SANTILLAN, VERONICA",
-      "hora": "1:00-3:00"
-    },
-    {
-      "materia": "C\u00c1LCULO DIFERENCIAL E INTEGRAL",
-      "aula": "X-6",
-      "profesor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO",
-      "hora": "11:00-1:00"
-    }
-  ],
-  "Friday": [
-    {
-      "materia": "REDES DE COMPUTADORAS",
-      "aula": "X-16",
-      "profesor": "REYNOSO GOMEZ, BLANCA LORENA",
-      "hora": "9:00-11:00"
-    },
-    {
-      "materia": "ECUACIONES DIFERENCIALES",
-      "aula": "X-18",
-      "profesor": "ESPINOZA VALDEZ, AURORA",
-      "hora": "1:00-3:00"
-    },
-    {
-      "materia": "SISTEMAS DIGITALES",
-      "aula": "X-14",
-      "profesor": "CASILLAS ZAMORA, ANTONIO",
-      "hora": "1:00-3:00"
-    },
-    {
       "materia": "MATEM\u00c1TICAS DISCRETAS",
-      "aula": "X-6",
+      "aula": "X-1",
       "profesor": "ISLAS TOSKI, MIGUEL ANGEL ALEJANDRO",
-      "hora": "1:00-3:00"
+      "hora": "3:00-5:00"
     },
     {
       "materia": "FUNDAMENTOS DE PROGRAMACI\u00d3N",
       "aula": "X-1",
       "profesor": "LOPEZ ARCE DELGADO, JORGE ERNESTO",
+      "hora": "9:00-11:00"
+    },
+    {
+      "materia": "PREC\u00c1LCULO",
+      "aula": "X-1",
+      "profesor": "GUTIERREZ HERNANDEZ, ALFREDO",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "\u00c9TICA Y LEGISLACI\u00d3N",
+      "aula": "X-4",
+      "profesor": "VERA SORIA, FRANCISCO",
       "hora": "1:00-3:00"
+    }
+  ],
+  "Tuesday": [
+    {
+      "materia": "INGENIER\u00cdA DE SOFTWARE",
+      "aula": "X-20",
+      "profesor": "MARTINEZ SOLTERO, ERASMO GABRIEL",
+      "hora": "1:00-3:00"
+    },
+    {
+      "materia": "AN\u00c1LISIS DE ALGORITMOS",
+      "aula": "X-20",
+      "profesor": "PEREZ TORRES, GRISELDA",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "SISTEMAS OPERATIVOS",
+      "aula": "X-7",
+      "profesor": "VALDES LOPEZ, JULIO ESTEBAN",
+      "hora": "9:00-11:00"
+    },
+    {
+      "materia": "\u00c1LGEBRA LINEAL",
+      "aula": "X-18",
+      "profesor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "ADMINISTRACI\u00d3N",
+      "aula": "X-1",
+      "profesor": "CAMACHO SANTILLAN, VERONICA",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "MEC\u00c1NICA",
+      "aula": "X-2",
+      "profesor": "VILLASE\u00d1OR PADILLA, CARLOS ALBERTO",
+      "hora": "9:00-11:00"
+    },
+    {
+      "materia": "EXPRESI\u00d3N ORAL Y ESCRITA",
+      "aula": "X-1",
+      "profesor": "BARBA VENEGAS, MIGUEL ANGEL",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "L\u00d3GICA MATEM\u00c1TICA",
+      "aula": "X-16",
+      "profesor": "LARA LOPEZ, GRACIELA",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "FUNDAMENTOS DE F\u00cdSICA",
+      "aula": "X-6",
+      "profesor": "GALVEZ LOPEZ, HECTOR ALEJANDRO",
+      "hora": "1:00-3:00"
+    },
+    {
+      "materia": "INTRODUCCI\u00d3N A LA INGENIER\u00cdA",
+      "aula": "X-16",
+      "profesor": "LUPERCIO CORONEL, RAMIRO",
+      "hora": "9:00-11:00"
+    }
+  ],
+  "Wednesday": [
+    {
+      "materia": "INNOVACI\u00d3N TECNOL\u00d3GICA",
+      "aula": "X-4",
+      "profesor": "ESPINOZA VALDEZ, AURORA",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "INTERACCI\u00d3N HUMANO COMPUTADORA",
+      "aula": "X-3",
+      "profesor": "LANDA HORTA, DANIEL OMAR",
+      "hora": "1:00-3:00"
+    },
+    {
+      "materia": "BASES DE DATOS",
+      "aula": "X-5",
+      "profesor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN",
+      "hora": "9:00-11:00"
+    },
+    {
+      "materia": "SEMINARIO DE INTEGRACI\u00d3N PROTOCOLO",
+      "aula": "X-17",
+      "profesor": "MORALES RAMIREZ, THELMA ISABEL",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "ESTRUCTURA DE DATOS",
+      "aula": "X-20",
+      "profesor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "PROBABILIDAD Y ESTAD\u00cdSTICA",
+      "aula": "X-10",
+      "profesor": "RAMIREZ HERNANDEZ, NORMA",
+      "hora": "1:00-3:00"
+    },
+    {
+      "materia": "ARQUITECTURA DE COMPUTADORAS",
+      "aula": "X-13",
+      "profesor": "GALVEZ LOPEZ, HECTOR ALEJANDRO",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "LIDERAZGO Y EMPRENDIMIENTO",
+      "aula": "X-6",
+      "profesor": "MARISCAL LUGO, LUIS FELIPE",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "PROGRAMACI\u00d3N ORIENTADA A OBJETOS",
+      "aula": "X-15",
+      "profesor": "SANTIAGO HERNANDEZ, ELOISA",
+      "hora": "9:00-11:00"
+    },
+    {
+      "materia": "SISTEMAS DIGITALES",
+      "aula": "X-8",
+      "profesor": "CASILLAS ZAMORA, ANTONIO",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "PROGRAMACI\u00d3N ESTRUCTURADA",
+      "aula": "X-11",
+      "profesor": "PEREZ TORRES, GRISELDA",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "MATEM\u00c1TICAS DISCRETAS",
+      "aula": "X-1",
+      "profesor": "ISLAS TOSKI, MIGUEL ANGEL ALEJANDRO",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "C\u00c1LCULO DIFERENCIAL E INTEGRAL",
+      "aula": "X-8",
+      "profesor": "VALDES LOPEZ, JULIO ESTEBAN",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "ADMINISTRACI\u00d3N DE PROYECTOS TECNOL\u00d3GICOS",
+      "aula": "X-6",
+      "profesor": "REYNOSO GOMEZ, BLANCA LORENA",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "FUNDAMENTOS DE PROGRAMACI\u00d3N",
+      "aula": "X-1",
+      "profesor": "LOPEZ ARCE DELGADO, JORGE ERNESTO",
+      "hora": "9:00-11:00"
+    },
+    {
+      "materia": "PREC\u00c1LCULO",
+      "aula": "X-1",
+      "profesor": "GUTIERREZ HERNANDEZ, ALFREDO",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "\u00c9TICA Y LEGISLACI\u00d3N",
+      "aula": "X-4",
+      "profesor": "VERA SORIA, FRANCISCO",
+      "hora": "1:00-3:00"
+    },
+    {
+      "materia": "TEOR\u00cdA DE LA COMPUTACI\u00d3N",
+      "aula": "X-4",
+      "profesor": "RAMIREZ MORENO, BENJAMIN",
+      "hora": "11:00-1:00"
+    }
+  ],
+  "Thursday": [
+    {
+      "materia": "INGENIER\u00cdA DE SOFTWARE",
+      "aula": "X-20",
+      "profesor": "MARTINEZ SOLTERO, ERASMO GABRIEL",
+      "hora": "1:00-3:00"
+    },
+    {
+      "materia": "AN\u00c1LISIS DE ALGORITMOS",
+      "aula": "X-20",
+      "profesor": "PEREZ TORRES, GRISELDA",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "SISTEMAS OPERATIVOS",
+      "aula": "X-7",
+      "profesor": "VALDES LOPEZ, JULIO ESTEBAN",
+      "hora": "9:00-11:00"
+    },
+    {
+      "materia": "\u00c1LGEBRA LINEAL",
+      "aula": "X-18",
+      "profesor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "ADMINISTRACI\u00d3N",
+      "aula": "X-1",
+      "profesor": "CAMACHO SANTILLAN, VERONICA",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "MEC\u00c1NICA",
+      "aula": "X-2",
+      "profesor": "VILLASE\u00d1OR PADILLA, CARLOS ALBERTO",
+      "hora": "9:00-11:00"
+    },
+    {
+      "materia": "EXPRESI\u00d3N ORAL Y ESCRITA",
+      "aula": "X-1",
+      "profesor": "BARBA VENEGAS, MIGUEL ANGEL",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "L\u00d3GICA MATEM\u00c1TICA",
+      "aula": "X-16",
+      "profesor": "LARA LOPEZ, GRACIELA",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "FUNDAMENTOS DE F\u00cdSICA",
+      "aula": "X-6",
+      "profesor": "GALVEZ LOPEZ, HECTOR ALEJANDRO",
+      "hora": "1:00-3:00"
+    },
+    {
+      "materia": "INTRODUCCI\u00d3N A LA INGENIER\u00cdA",
+      "aula": "X-16",
+      "profesor": "LUPERCIO CORONEL, RAMIRO",
+      "hora": "9:00-11:00"
+    }
+  ],
+  "Friday": [
+    {
+      "materia": "INNOVACI\u00d3N TECNOL\u00d3GICA",
+      "aula": "X-4",
+      "profesor": "ESPINOZA VALDEZ, AURORA",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "ESTRUCTURA DE DATOS",
+      "aula": "X-20",
+      "profesor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "PROBABILIDAD Y ESTAD\u00cdSTICA",
+      "aula": "X-10",
+      "profesor": "RAMIREZ HERNANDEZ, NORMA",
+      "hora": "1:00-3:00"
+    },
+    {
+      "materia": "LIDERAZGO Y EMPRENDIMIENTO",
+      "aula": "X-6",
+      "profesor": "MARISCAL LUGO, LUIS FELIPE",
+      "hora": "11:00-1:00"
+    },
+    {
+      "materia": "PROGRAMACI\u00d3N ORIENTADA A OBJETOS",
+      "aula": "X-15",
+      "profesor": "SANTIAGO HERNANDEZ, ELOISA",
+      "hora": "9:00-11:00"
+    },
+    {
+      "materia": "SISTEMAS DIGITALES",
+      "aula": "X-8",
+      "profesor": "CASILLAS ZAMORA, ANTONIO",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "PROGRAMACI\u00d3N ESTRUCTURADA",
+      "aula": "X-11",
+      "profesor": "PEREZ TORRES, GRISELDA",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "C\u00c1LCULO DIFERENCIAL E INTEGRAL",
+      "aula": "X-8",
+      "profesor": "VALDES LOPEZ, JULIO ESTEBAN",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "ADMINISTRACI\u00d3N DE PROYECTOS TECNOL\u00d3GICOS",
+      "aula": "X-6",
+      "profesor": "REYNOSO GOMEZ, BLANCA LORENA",
+      "hora": "3:00-5:00"
+    },
+    {
+      "materia": "TEOR\u00cdA DE LA COMPUTACI\u00d3N",
+      "aula": "X-4",
+      "profesor": "RAMIREZ MORENO, BENJAMIN",
+      "hora": "11:00-1:00"
     }
   ]
 }
