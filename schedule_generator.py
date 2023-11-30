@@ -69,7 +69,7 @@ class ScheduleGenerator:
                 return False
 
             # Ensure two classes are not scheduled at the same time in the same classroom
-            if details['Time'] == time and details['Day'] == day and details['Classroom'] == classroom:
+            if details['Time'] == time and day in details['Day'] and classroom == details['Classroom']:
                 return False
         return True
 
