@@ -1,9 +1,10 @@
 Equipo #4
 
-Lopez Gonzalez Jorge Luis
-Mora Eduardo
-Lopez Sergio
-Martinez Abel
+ABEL ALEJANDRO MARTINEZ CERVANTES
+SERGIO JAIR LOPEZ NUNEZ
+JORGE LUIS LOPEZ GONZALEZ
+JOSE EDUARDO GOMEZ MORA
 
-GitHub: 
-Notion: 
+
+GitHub: https://github.com/jorgelopez08/algorithm_analysis
+Notion: https://www.notion.so/jorgelopez08/Algorithm-Analysis-ac6eda911d354b028d922278b51efa18?pvs=4

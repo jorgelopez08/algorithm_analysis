@@ -139,14 +139,16 @@ class MainWindow(QMainWindow):
         try:
             # Carga tus datos desde el archivo JSON
             archivo_json = self.ui.file_name.text()
+            print(archivo_json)
             with open(archivo_json, 'r', encoding='utf-8') as file:
                 datos = json.load(file)
-
+                file.close()
+            print(datos)
             subjects = [curso for curso in (datos["Datos"][2]["Curso"])]
             professors = [profesor for profesor in (datos["Datos"][0]["Profesor"])]
             classrooms = [aula for aula in (datos["Datos"][1]["Aula"])]
             time_slots = ['9:00-11:00', '11:00-1:00', '1:00-3:00', '3:00-5:00']
-            days_list = ['Monday-Wednesday', 'Tuesday-Thursday', 'Wednesday-Friday']
+            days_list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 
             # Create ScheduleGenerator instance
             schedule_generator = ScheduleGenerator(subjects, professors, classrooms, time_slots, days_list)
@@ -169,8 +171,9 @@ class MainWindow(QMainWindow):
             with open("view_schedule_plain_text.txt", "w") as view_schedule:
                 view_schedule.write(self.view_schedule)
             self.ui.view_schedule_plain_text_edit.setPlainText(self.view_schedule)
-            
-        except:
+
+        except Exception as e:
+            print(e)
             print("El archivo .json proporcionado no es válido, revise el formato\n\n")
             QMessageBox.warning(self, "Error", "El archivo .json proporcionado no es válido, revise el formato")
         else:
